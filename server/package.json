@@ -1,0 +1,45 @@
+{
+  "name": "dronuts202-team-d",
+  "version": "1.0.0",
+  "description": "17-356 initial project: Dronuts for Team D",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMU-17-356/dronuts2020-team-d.git"
+  },
+  "author": "Vrinda Gupta, Daniel Kim, Tianyi Zhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMU-17-356/dronuts2020-team-d/issues"
+  },
+  "homepage": "https://github.com/CMU-17-356/dronuts2020-team-d#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.3",
+    "mongoose": "^5.9.2",
+    "multer": "^1.4.2",
+    "sinon": "^8.1.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0",
+    "nodemon": "^1.19.4",
+    "puppeteer": "^2.1.1"
+  }
+}

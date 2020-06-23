@@ -1,0 +1,29 @@
+.menu {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#addNewItem {
+	margin-top: 30px;
+	width: 250px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-90w {
+	width: 75%;
+	max-width: none!important;
+}

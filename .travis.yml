@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - "8"
+dist: xenial
+sudo: required
+services:
+  - docker
+
+env:
+  global:
+    - DOCKER_TLS_VERIFY="1"
+    - DOCKER_HOST="tcp://104.42.174.187:2376"
+    - DOCKER_CERT_PATH=$TRAVIS_BUILD_DIR/azure
+    - DOCKER_MACHINE_NAME="dronuts2020-team-d"
+
+script:
+  - cd ./server && npm install
+  - cd ..
+  - docker-compose --file docker-compose.prod.yml build
+  - cd ./server && npm test
+  - cd ..
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: docker-compose --file docker-compose.prod.yml up -d --remove-orphans
+  on:
+    branch: master
+
+after_success:

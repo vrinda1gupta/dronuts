@@ -1,0 +1,31 @@
+.container {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.table-header {
+    background-color: whitesmoke;
+}
+
+.table {
+    border: darkgrey;
+		table-layout: fixed;
+    width: 100%;
+}
+
+.pagination {
+    justify-content: flex-end;
+}
+
+.react-bootstrap-table-pagination {
+    text-align: justify;
+}
+
+.text-center {
+	width: 100%;
+	margin: 30px;
+	border-style: solid;
+	borderWidth: 15px;
+	borderColor: #FFF4F9;
+}
