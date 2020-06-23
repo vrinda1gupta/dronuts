@@ -35,7 +35,7 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.use(express.json());
 app.use(cors());
 
-const mongoDB = 'mongodb+srv://tianyizhu:%21Yitian9710z@cluster0-lbaim.mongodb.net/test?retryWrites=true&w=majority';
+const mongoDB = 'mongodb+srv://xxxxxxxxxxxxx';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
